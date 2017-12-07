@@ -30,6 +30,11 @@ if [ -f "/usr/bin/dockerhosts" ] ; then
     rm "/usr/bin/dockerhosts"
 fi
 
+if [ -f "/etc/dockerhosts.conf.json" ] ; then
+    echo "Uninstall file /etc/dockerhosts.conf.json"
+    rm "/etc/dockerhosts.conf.json"
+fi
+
 systemctl daemon-reload
 
 echo "Done."

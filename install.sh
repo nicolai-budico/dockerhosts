@@ -15,6 +15,9 @@ cp "${WORKDIR}/dockerhosts.service" "/etc/systemd/system/"
 echo "Install file /usr/bin/dockerhosts"
 cp "${WORKDIR}/dockerhosts.py" "/usr/bin/dockerhosts"
 
+echo "Install file /etc/dockerhosts.conf.json"
+cp "${WORKDIR}/dockerhosts.conf.json" "/etc/dockerhosts.conf.json"
+
 
 systemctl daemon-reload
 
