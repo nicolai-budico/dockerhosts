@@ -1,0 +1,8 @@
+[Unit]
+Description=docker-hosts
+
+[Service]
+ExecStart=/usr/bin/dockerhosts
+
+[Install]
+WantedBy=multi-user.target

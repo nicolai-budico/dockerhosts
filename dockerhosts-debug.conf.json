@@ -1,0 +1,13 @@
+{
+    "hosts-folder": "/tmp/var/run/docker-hosts",
+    "docker-executable": "/usr/bin/docker",
+    "dnsmasq-executable": "/usr/sbin/dnsmasq",
+    "dnsmasq-parameters": [
+        "--no-daemon",
+        "--clear-on-reload",
+        "--no-resolv",
+        "--no-hosts",
+        "--listen-address=127.0.0.54",
+        "--port=5353"
+    ]
+}
